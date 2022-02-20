@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="./src/icon.gif">
+    <link href="./src/global.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="style.css">
+    <script src="./src/jquery.min.js.download"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="left">
+            <a href="#" class="logo"><img src="./src/icon.gif">
+            </a>
+            <div class="nav">
+                <a style="cursor: pointer;">LUFIS</a>
+            </div>
+
+        </div>
+        <div class="right">
+            <a class="icon" href="https://twitter.com/lufisnft" target="_blank"><img src="./src/icon-twitter.svg"></a>
+            <a class="icon" href="https://instagram.com/lufisnft" target="_blank"><img src="./src/icon-instagram.svg"></a>
+            <a class="icon" id="buttondiscord" target="_blank"><img src="./src/icon-discord.svg"></a>
+            <div class="button small orange connect" onclick="connect()">CONNECT</div>
+        </div>
+    </div>
+
+
+    <div class="videoContainer wrap">
+        <div class="mainVideo">
+            <div class="contagem">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="numero" id="dia"></div>
+                        </td>
+                        <td>
+                            <div class="numero" id="hora"></div>
+                        </td>
+                        <td>
+                            <div class="numero" id="minuto"></div>
+                        </td>
+                        <td>
+                            <div class="numero" id="segundo"></div>
+                        </td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td>
+                            <p class="legenda">DAYS</p>
+                        </td>
+                        <td>
+                            <p class="legenda">HOURS</p>
+                        </td>
+                        <td>
+                            <p class="legenda">MIN</p>
+                        </td>
+                        <td>
+                            <p class="legenda">SEG</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="mainText block wrap">
+        <h2>COMING MARCH 1ST</h2>
+        <p>Lufis come in a joyful range of colors with a collection size of 10,000. 🌸🐑
+        </p>
+        <div class="flex">
+            <a target="_blank" href="https://twitter.com/lufisnft" class="button"><img src="./src/icon-twitter.svg">TWITTER</a>
+            <a target="_blank" id="buttondiscord" class="button"><img src="./src/icon-discord.svg">DISCORD</a>
+        </div>
+    </div>
+
+    <div class="faq block wrap">
+        <h1>FAQ</h1>
+        <div class="block">
+            <h2>What ares Lufis ?</h2>
+            <p>Lufis Bath Party is a collection of 10,000 NFTs hand-drawn by <a target="_blank" href="https://twitter.com/lufisnft">Gal Shir</a>. Lufis are randomly generated and constructed from over 200 different components. Each Lufi is unique and minted
+                as an NFT on the Polygon blockchain. Lufis are dynamic NFTs and can change their traits over time by attending parties!</p>
+        </div>
+        <div class="block">
+            <h2>What the tech?</h2>
+            <p>Lufis are stored as ERC-721 tokens on the Polygon blockchain. After each party, the updated metadata and image will be uploaded to IPFS. The metadata includes all the historical versions of your Lufi, and all previous versions will be hosted
+                on IPFS.</p>
+        </div>
+        <div class="block">
+            <h2>Pregame?</h2>
+            <p>We invite some people to pregame with us and mint a Lufi. Are you the heart of every party? Follow us on <a target="_blank" href="https://twitter.com/lufisnft">Twitter</a>, join our <a target="_blank" href="#">Discord</a> to find out how to
+                win a spot on the pregame list.</p>
+        </div>
+        <div class="block">
+            <h2>Wen mint?</h2>
+            <p>March 1st for our pregame list (allow-list), and if it won’t cover the max supply, we’ll open the mint for the public on March 2nd.</p>
+        </div>
+        <div class="block">
+            <h2>What are bath parties?</h2>
+            <p>Bath parties are virtual events happening on the blockchain. No party is the same, and the only thing we can promise is that your Lufi will come home changed forever.</p>
+            <div class="indent">
+                <p><span class="number">1</span> Parties will be announced on <a target="_blank" href="https://twitter.com/lufisnft">Twitter</a> and <a target="_blank" href="#">Discord</a>.</p>
+                <p><span class="number">2</span> Each party runs for 24 hours in which you can decide for each of your Lufis if you want to attend the party.</p>
+                <p><span class="number">3</span> PARTY TIME 🎉</p>
+                <p><span class="number">4</span> That inevitable walk of shame... hit the reveal button to see how they came back from the party. Let's hope that they didn't lose that priceless family heirloom.</p>
+                <p><span class="number">5</span> Your Lufi will be updated on OpenSea, your wallet, and other platforms.</p>
+            </div>
+        </div>
+        <div class="block">
+            <h2>Wen party?</h2>
+            <p>When the vibe is right! Parties will be announced on <a target="_blank" href="https://twitter.com/lufisnft">Twitter</a> and <a target="_blank" href="#">Discord</a>. Craving a party? Let us know in the #wenparty Discord channel or tweet us
+                your best party meme with hashtag <a href="#">#wenparty</a></p>
+        </div>
+        <div class="block">
+            <h2>Do parties cost gas?</h2>
+            <p>No, parties don’t cost any gas! When you send your Lufis to a party, you will need to connect your wallet to verify that you’re the owner, but that doesn’t have any gas fees. When the party ends, we update the contract to refer to the new
+                metadata of all Lufis on IPFS - the cost of that contract interaction is on us.</p>
+        </div>
+        <div class="block">
+            <h2>Should I send my Lufi to a party?</h2>
+            <p>First of all, the choice is entirely yours! Bath parties are incredibly fun because they have the power to change your Lufi forever. During parties, each of your Lufis has the chance to win rare traits and increase in value.</p>
+            <p>In addition, the number of parties your Lufi attends will be encoded in the metadata and might influence future possibilities and access. For instance, there will be exclusive parties where you can win limited edition traits that are only
+                accessible to Lufis who like to party hard.</p>
+            <p>After all, Lufis are fun-loving creatures who thrive on action and live for constant change. So stop the overparenting and let your Lufis go wild! </p>
+        </div>
+        <div class="block">
+            <h2>My Lufis didn’t change after a party, help?</h2>
+            <p>It takes some time for OpenSea and other platforms to update metadata. You can speed up the process by clicking on the refresh metadata button on OpenSea. In the meantime, you can check out your Lufis on Lufi.art/me.</p>
+        </div>
+    </div>
+
+    <div class="team block wrap">
+        <h1>TEAM</h1>
+        <p>We are 4 frens staying up all night exploring how to combine art, music, game play and community. We are kinda ambitious about building a new type of digital experience. Please send us hate mail when you get bored of us.</p>
+        <div class="teamGrid">
+            <a class="member" target="_blank" href="#">
+                <img class="avatar" src="https://lh3.googleusercontent.com/DG9b-vqVngHZBC-yw_ylSQx7zEhf22lgvKgSV-cmMnOon2w3ai1L_gHgE62YmEROVc5YwJBrXX2-g-spTHSPuzOeTXHLw8zot2ft=w238">
+                <h2>ADAM</h2>
+                <p>ART</p>
+                <div class="handle">@adamdan<img src="./src/verified.svg"></div>
+            </a>
+            <a class="member" target="_blank" href="#">
+                <img class="avatar" src="https://lh3.googleusercontent.com/EJDxjseAOCmMLcd33eyiaTwumDwvdgOJqYwxK90x_NclOWpjMiWM5zXjyXmtZcta5hpv18kZ8Ee9Jo9v5D57b2V05B9L9Gc5hjVKRg=w238">
+                <h2>BRIAN</h2>
+                <p>DEV</p>
+                <div class="handle">@braiadev</div>
+            </a>
+            <a class="member" target="_blank" href="#">
+                <img class="avatar" src="https://lh3.googleusercontent.com/YEVYJ9jfcaUW9N-xqRiHkWoe7TI3qQa9LV9qw74XCJdFznDicGKvPmxWfS6COZ1Ahs5PWvEl5eytX2SxD1w3slSHXFYlhrAxNfQuJQ=w600">
+                <h2>EMMA</h2>
+                <p>Community</p>
+                <div class="handle">@emma.eth</div>
+            </a>
+            <a class="member" target="_blank" href="#">
+                <img class="avatar" src="https://lh3.googleusercontent.com/DaqFOyOcFTOY92SaRVhpg8HbvZSbAXkBUmQVIbX7BpTM4GCkHYILnRqiE6iown_HEUgEgpWst9UCpLy_-0fFrGx3rskKJsH9DsuxCqs=s0">
+                <h2>ED</h2>
+                <p>DEV</p>
+                <div class="handle">@edbruce<img src="./src/verified.svg"></div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        var target_date = new Date("Marc   1, 2022").getTime();
+        var dias, horas, minutos, segundos;
+
+        setInterval(function() {
+            var current_date = new Date().getTime();
+            var segundos_f = (target_date - current_date) / 1000;
+
+            dias = parseInt(segundos_f / 86400);
+            segundos_f = segundos_f % 86400;
+
+            horas = parseInt(segundos_f / 3600);
+            segundos_f = segundos_f % 3600;
+
+            minutos = parseInt(segundos_f / 60);
+            segundos = parseInt(segundos_f % 60);
+
+            document.getElementById('dia').innerHTML = dias;
+            document.getElementById('hora').innerHTML = horas;
+            document.getElementById('minuto').innerHTML = minutos;
+            document.getElementById('segundo').innerHTML = segundos;
+
+
+        }, 1000);
+    </script>
+
+    <script>
+        $('.faq .block').click(function() {
+            if ($(this).attr('status') != 'open') {
+                $(this).attr('status', 'open');
+            } else {
+                $(this).attr('status', 'closed');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

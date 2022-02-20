@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-sound-on</title>
+    <g id="icon-sound-on" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#121212" x="8" y="15" width="10" height="10"></rect>
+        <polygon id="Rectangle" fill="#121212" transform="translate(20.843146, 20.156854) rotate(-45.000000) translate(-20.843146, -20.156854) " points="12.9540585 12.267767 28.732233 12.4895924 13.1758839 28.0459415"></polygon>
+        <path d="M23,30.1568542 C28.5228475,30.1568542 33,25.6797017 33,20.1568542 C33,14.6340068 28.5228475,10.1568542 23,10.1568542" id="Path" stroke="#121212" stroke-width="2"></path>
+        <path d="M23,24.1568542 C25.209139,24.1568542 27,22.3659932 27,20.1568542 C27,17.9477153 25.209139,16.1568542 23,16.1568542" id="Path" stroke="#121212" stroke-width="2"></path>
+    </g>
+</svg>
